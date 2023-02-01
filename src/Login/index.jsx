@@ -37,13 +37,21 @@ function Login() {
 
   return !isUserLoggedIn ? (
     <>
-      <div className="container text-center">
-        <div className="d-flex justify-content-center h-100">
+      <main
+        className="vh-100"
+        style={{
+          backgroundImage: `url(images/loginbg.jpg`,
+          backgroundRepeat: "no-repeat",
+          objectFit: "cover",
+          width: "100%",
+        }}
+      >
+        <div className="container d-flex aligns-items-center justify-content-center text-center">
           <div className="card">
-            <div className="card-header">
+            <div className="card-header pt-3">
               <h3>Sign In</h3>
             </div>
-            <div className="card-body">
+            <div className="card-body pt-4">
               <div>
                 <div className="input-group form-group">
                   <input
@@ -73,7 +81,7 @@ function Login() {
                     onClick={login}
                   />
                 </div>
-                <div className="d-flex mt-3 justify-content-center social_icon">
+                <div className="d-flex mt-4 justify-content-center social_icon">
                   <span>
                     <i className="fab fa-facebook-square"></i>
                   </span>
@@ -96,7 +104,7 @@ function Login() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   ) : (
     <></>
