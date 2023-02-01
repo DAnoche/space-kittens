@@ -37,74 +37,92 @@ function Login() {
 
   return !isUserLoggedIn ? (
     <>
-      <main
-        className="vh-100"
-        style={{
-          backgroundImage: `url(images/loginbg.jpg`,
-          backgroundRepeat: "no-repeat",
-          objectFit: "cover",
-          width: "100%",
-        }}
-      >
-        <div className="container d-flex aligns-items-center justify-content-center text-center">
-          <div className="card">
-            <div className="card-header pt-3">
-              <h3>Sign In</h3>
-            </div>
-            <div className="card-body pt-4">
-              <div>
-                <div className="input-group form-group">
+      <div className="limiter">
+        <div className="container-login100">
+          <div className="wrap-login100">
+            <form className="login100-form validate-form">
+              <span className="login100-form-title pb-5">
+                Login to continue
+              </span>
+
+              <div className="wrap-input100">
+                <input
+                  id="username"
+                  className="input100"
+                  type="text"
+                  placeholder="Username"
+                />
+              </div>
+
+              <div
+                className="wrap-input100 validate-input"
+                data-validate="Password is required"
+              >
+                <input
+                  id="password"
+                  className="input100"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+
+              <div className="flex-sb-m w-full pt-3 p-b-32">
+                <div className="contact100-form-checkbox">
                   <input
-                    id="username"
-                    type="text"
-                    className="form-control"
-                    placeholder="username"
+                    className="input-checkbox100"
+                    id="ckb1"
+                    type="checkbox"
+                    name="remember-me"
                   />
+                  <label className="label-checkbox100" htmlFor="ckb1">
+                    Remember me
+                  </label>
                 </div>
-                <div className="input-group form-group mt-3">
-                  <input
-                    id="password"
-                    type="password"
-                    className="form-control"
-                    placeholder="password"
-                  />
-                </div>
-                <div className="row align-items-center remember mt-3">
-                  <input type="checkbox" />
-                  Remember Me
-                </div>
-                <div className="form-group">
-                  <input
-                    type="submit"
-                    value="Login"
-                    className="btn mt-3 w-100 login_btn"
-                    onClick={login}
-                  />
-                </div>
-                <div className="d-flex mt-4 justify-content-center social_icon">
-                  <span>
-                    <i className="fab fa-facebook-square"></i>
-                  </span>
-                  <span>
-                    <i className="fab fa-google-plus-square"></i>
-                  </span>
-                  <span>
-                    <i className="fab fa-twitter-square"></i>
-                  </span>
+
+                <div>
+                  <a href="#" className="txt1">
+                    Forgot Password?
+                  </a>
                 </div>
               </div>
-            </div>
-            <div className="card-footer">
-              <div className="d-flex justify-content-center links">
-                Don't have an account?<a href="#">Sign Up</a>
+
+              <div className="container-login100-form-btn">
+                <button className="login100-form-btn" onClick={login}>
+                  Login
+                </button>
               </div>
-              <div className="d-flex justify-content-center">
-                <a href="#">Forgot your password?</a>
+
+              <div className="text-center p-t-46 p-b-20">
+                <span className="txt2">or sign up using</span>
               </div>
-            </div>
+
+              <div className="login100-form-social flex-c-m">
+                <a
+                  href="#"
+                  className="login100-form-social-item flex-c-m bg1 m-r-5"
+                >
+                  <i className="fa fa-facebook-f" aria-hidden="true"></i>
+                </a>
+
+                <a
+                  href="#"
+                  className="login100-form-social-item flex-c-m bg2 m-r-5"
+                >
+                  <i className="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+            </form>
+
+            <div
+              className="login100-more"
+              style={{
+                backgroundImage: `url(images/loginbg.jpg)`,
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   ) : (
     <></>

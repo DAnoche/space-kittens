@@ -1,4 +1,3 @@
-//Edit styles format
 function HomeContent() {
   return (
     <>
@@ -25,7 +24,11 @@ function HomeContent() {
           </div>
           <div
             className="bg-light shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"
+            style={{
+              width: "80%",
+              height: "300px",
+              borderRadius: "21px 21px 0 0",
+            }}
           ></div>
         </div>
         <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -35,7 +38,11 @@ function HomeContent() {
           </div>
           <div
             className="bg-dark shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"
+            style={{
+              width: "80%",
+              height: "300px",
+              borderRadius: "21px 21px 0 0",
+            }}
           ></div>
         </div>
       </div>
@@ -48,7 +55,11 @@ function HomeContent() {
           </div>
           <div
             className="bg-dark shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"
+            style={{
+              width: "80%",
+              height: "300px",
+              borderRadius: "21px 21px 0 0",
+            }}
           ></div>
         </div>
         <div className="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -58,7 +69,11 @@ function HomeContent() {
           </div>
           <div
             className="bg-light shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"
+            style={{
+              width: "80%",
+              height: "300px",
+              borderRadius: "21px 21px 0 0",
+            }}
           ></div>
         </div>
       </div>
@@ -71,7 +86,11 @@ function HomeContent() {
           </div>
           <div
             className="bg-body shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"
+            style={{
+              width: "80%",
+              height: "300px",
+              borderRadius: "21px 21px 0 0",
+            }}
           ></div>
         </div>
         <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -81,7 +100,11 @@ function HomeContent() {
           </div>
           <div
             className="bg-body shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"
+            style={{
+              width: "80%",
+              height: "300px",
+              borderRadius: "21px 21px 0 0",
+            }}
           ></div>
         </div>
       </div>
@@ -94,7 +117,11 @@ function HomeContent() {
           </div>
           <div
             className="bg-body shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"
+            style={{
+              width: "80%",
+              height: "300px",
+              borderRadius: "21px 21px 0 0",
+            }}
           ></div>
         </div>
         <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -104,7 +131,11 @@ function HomeContent() {
           </div>
           <div
             className="bg-body shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"
+            style={{
+              width: "80%",
+              height: "300px",
+              borderRadius: "21px 21px 0 0",
+            }}
           ></div>
         </div>
       </div>

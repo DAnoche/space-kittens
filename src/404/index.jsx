@@ -23,7 +23,7 @@ function NotFound() {
               </Link>
               <p className="pt-4">
                 Or you cant contact&nbsp;
-                <Link to="/Support" className="link-light">
+                <Link to="/Support" className="link link--light">
                   Support
                 </Link>
                 &nbsp;and report the problem.

@@ -37,6 +37,8 @@
     ]
   },
   "devDependencies": {
-    "file-loader": "^6.2.0"
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "postcss-loader": "^7.0.2"
   }
 }

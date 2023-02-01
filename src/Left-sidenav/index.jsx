@@ -9,48 +9,52 @@ function LeftNavBar(props) {
 
   return (
     <>
-      <nav id="sidebarMenu" className="col-md-1 col-lg-2 bg-dark vh-100">
+      <nav id="sidebarMenu" className="col-md-1 col-lg-2 bg-secondary vh-100">
         <div className="text-center my-3">
           <img
-            className="profile-image border border-3 border-warning"
+            className="profile-image border border-3 border-light"
             src="images/tomeee.jpg"
             alt="Profile-Pic"
           />
-          <h2 className="mt-2">Hi!, I'm Tomeee</h2>
+          <h2 className="text-light mt-2">Hi!, I'm Tomeee</h2>
           <Link to="/Someting" className="link-light">
             View Profile
           </Link>
         </div>
 
-        <div className=" container border-top border-bottom border-secondary pt-3">
-          <ul className="navbar-nav mb-5 ps-4">
+        <div className=" container border-top border-bottom border-light pt-3">
+          <ul className="navbar-nav mb-5 ps-4 text-light">
             <li className="nav-item active mb-3">
-              <Link to="/" className="nav-link">
+              <Link to="/" className="btn btn-light w-100">
                 Home
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Dashboard" className="nav-link">
+              <Link to="/Dashboard" className="btn text-light w-100">
                 Dashboard
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Contact-us" className="nav-link">
+              <Link to="/Contact-us" className="btn text-light w-100">
                 Contact Us
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Support" className="nav-link">
+              <Link to="/Support" className="btn text-light w-100">
                 Support
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Someting" className="nav-link">
+              <Link to="/Someting" className="btn text-light w-100">
                 Documents
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Login" className="nav-link " onClick={SignOut}>
+              <Link
+                to="/Login"
+                className="btn text-light w-100"
+                onClick={SignOut}
+              >
                 Sign-Out
               </Link>
             </li>
@@ -60,17 +64,17 @@ function LeftNavBar(props) {
           <ul className="justify-content-center list-unstyled d-flex pt-3">
             <li className="ms-3">
               <a href="https://www.facebook.com" target="_blank">
-                <i className="bi bi-facebook social-icons text-warning"></i>
+                <i className="bi bi-facebook social-icons text-light"></i>
               </a>
             </li>
             <li className="ms-3">
               <a href="https://www.twitter.com" target="_blank">
-                <i className="bi bi-twitter social-icons text-warning"></i>
+                <i className="bi bi-twitter social-icons text-light"></i>
               </a>
             </li>
             <li className="ms-3">
               <a href="https://www.instagram.com" target="_blank">
-                <i className="bi bi-instagram social-icons text-warning"></i>
+                <i className="bi bi-instagram social-icons text-light"></i>
               </a>
             </li>
           </ul>

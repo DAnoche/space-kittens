@@ -4,11 +4,6 @@
   width: 10em;
 }
 
-.navbar-nav > .active > a {
-  color: #ffc107;
-  font-weight: bold;
-}
-
 .social-icons {
   font-size: 2em;
 }
