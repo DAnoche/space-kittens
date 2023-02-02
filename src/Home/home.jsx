@@ -1,142 +1,359 @@
+import "./home.css";
+
 function HomeContent() {
   return (
     <>
-      <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div className="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 className="display-4 fw-normal">Punny headline</h1>
-          <p className="lead fw-normal">
-            And an even wittier subheading to boot. Jumpstart your marketing
-            efforts with this example based on Apple’s marketing pages.
-          </p>
-          <a className="btn btn-outline-secondary" href="#">
-            Coming soon
-          </a>
-        </div>
-        <div className="product-device shadow-sm d-none d-md-block"></div>
-        <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-      </div>
+      <div class="container d-flex justify-content-center mt-3">
+        <div class="col-md-7">
+          <div class="social-feed-separated">
+            <div class="social-avatar">
+              <a href="">
+                <img
+                  alt="image"
+                  src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                />
+              </a>
+            </div>
 
-      <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div className="my-3 py-3">
-            <h2 className="display-5">Another headline</h2>
-            <p className="lead">And an even wittier subheading.</p>
-          </div>
-          <div
-            className="bg-light shadow-sm mx-auto"
-            style={{
-              width: "80%",
-              height: "300px",
-              borderRadius: "21px 21px 0 0",
-            }}
-          ></div>
-        </div>
-        <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div className="my-3 p-3">
-            <h2 className="display-5">Another headline</h2>
-            <p className="lead">And an even wittier subheading.</p>
-          </div>
-          <div
-            className="bg-dark shadow-sm mx-auto"
-            style={{
-              width: "80%",
-              height: "300px",
-              borderRadius: "21px 21px 0 0",
-            }}
-          ></div>
-        </div>
-      </div>
+            <div class="social-feed-box">
+              <div class="pull-right social-action dropdown">
+                <button
+                  data-toggle="dropdown"
+                  class="dropdown-toggle btn-white"
+                >
+                  <i class="fa fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu m-t-xs">
+                  <li>
+                    <a href="#">Config</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="social-avatar">
+                <a href="#">Andrew Williams</a>
+                <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+              </div>
+              <div class="social-body">
+                <p>
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Packages and web page editors now use Lorem Ipsum as
+                  their default model text.
+                </p>
+                <img
+                  src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                  class="img-responsive"
+                />
+                <div class="btn-group">
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-thumbs-up"></i> Like this!
+                  </button>
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-comments"></i> Comment
+                  </button>
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-share"></i> Share
+                  </button>
+                </div>
+              </div>
+              <div class="social-footer">
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <a href="#">Andrew Williams</a>
+                    Internet tend to repeat predefined chunks as necessary,
+                    making this the first true generator on the Internet. It
+                    uses a dictionary of over 200 Latin words.
+                    <br />
+                    <a href="#" class="small">
+                      <i class="fa fa-thumbs-up"></i> 26 Like this!
+                    </a>{" "}
+                    -<small class="text-muted">12.06.2014</small>
+                  </div>
+                </div>
 
-      <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div className="my-3 p-3">
-            <h2 className="display-5">Another headline</h2>
-            <p className="lead">And an even wittier subheading.</p>
-          </div>
-          <div
-            className="bg-dark shadow-sm mx-auto"
-            style={{
-              width: "80%",
-              height: "300px",
-              borderRadius: "21px 21px 0 0",
-            }}
-          ></div>
-        </div>
-        <div className="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div className="my-3 py-3">
-            <h2 className="display-5">Another headline</h2>
-            <p className="lead">And an even wittier subheading.</p>
-          </div>
-          <div
-            className="bg-light shadow-sm mx-auto"
-            style={{
-              width: "80%",
-              height: "300px",
-              borderRadius: "21px 21px 0 0",
-            }}
-          ></div>
-        </div>
-      </div>
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <a href="#">Andrew Williams</a>
+                    Making this the first true generator on the Internet. It
+                    uses a dictionary of.
+                    <br />
+                    <a href="#" class="small">
+                      <i class="fa fa-thumbs-up"></i> 11 Like this!
+                    </a>{" "}
+                    -<small class="text-muted">10.07.2014</small>
+                  </div>
 
-      <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div className="my-3 p-3">
-            <h2 className="display-5">Another headline</h2>
-            <p className="lead">And an even wittier subheading.</p>
-          </div>
-          <div
-            className="bg-body shadow-sm mx-auto"
-            style={{
-              width: "80%",
-              height: "300px",
-              borderRadius: "21px 21px 0 0",
-            }}
-          ></div>
-        </div>
-        <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div className="my-3 py-3">
-            <h2 className="display-5">Another headline</h2>
-            <p className="lead">And an even wittier subheading.</p>
-          </div>
-          <div
-            className="bg-body shadow-sm mx-auto"
-            style={{
-              width: "80%",
-              height: "300px",
-              borderRadius: "21px 21px 0 0",
-            }}
-          ></div>
-        </div>
-      </div>
+                  <div class="social-comment">
+                    <a href="" class="pull-left">
+                      <img
+                        alt="image"
+                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                      />
+                    </a>
+                    <div class="media-body">
+                      <a href="#">Andrew Williams</a>
+                      Making this the first true generator on the Internet. It
+                      uses a dictionary of.
+                      <br />
+                      <a href="#" class="small">
+                        <i class="fa fa-thumbs-up"></i> 11 Like this!
+                      </a>{" "}
+                      -<small class="text-muted">10.07.2014</small>
+                    </div>
+                  </div>
+                  <div class="social-comment">
+                    <a href="" class="pull-left">
+                      <img
+                        alt="image"
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                      />
+                    </a>
+                    <div class="media-body">
+                      <textarea
+                        class="form-control"
+                        placeholder="Write comment..."
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
 
-      <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div className="my-3 p-3">
-            <h2 className="display-5">Another headline</h2>
-            <p className="lead">And an even wittier subheading.</p>
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <a href="#">Andrew Williams</a>
+                    Internet tend to repeat predefined chunks as necessary,
+                    making this the first true generator on the Internet. It
+                    uses a dictionary of over 200 Latin words.
+                    <br />
+                    <a href="#" class="small">
+                      <i class="fa fa-thumbs-up"></i> 26 Like this!
+                    </a>{" "}
+                    -<small class="text-muted">12.06.2014</small>
+                  </div>
+                </div>
+
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <a href="#">Andrew Williams</a>
+                    Making this the first true generator on the Internet. It
+                    uses a dictionary of over 200 Latin words.
+                    <br />
+                    <a href="#" class="small">
+                      <i class="fa fa-thumbs-up"></i> 26 Like this!
+                    </a>{" "}
+                    -<small class="text-muted">12.06.2014</small>
+                  </div>
+                </div>
+
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <textarea
+                      class="form-control"
+                      placeholder="Write comment..."
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            className="bg-body shadow-sm mx-auto"
-            style={{
-              width: "80%",
-              height: "300px",
-              borderRadius: "21px 21px 0 0",
-            }}
-          ></div>
-        </div>
-        <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div className="my-3 py-3">
-            <h2 className="display-5">Another headline</h2>
-            <p className="lead">And an even wittier subheading.</p>
+
+          <div class="social-feed-separated">
+            <div class="social-avatar">
+              <a href="">
+                <img
+                  alt="image"
+                  src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                />
+              </a>
+            </div>
+
+            <div class="social-feed-box">
+              <div class="pull-right social-action dropdown">
+                <button
+                  data-toggle="dropdown"
+                  class="dropdown-toggle btn-white"
+                >
+                  <i class="fa fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu m-t-xs">
+                  <li>
+                    <a href="#">Config</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="social-avatar">
+                <a href="#">Andrew Williams</a>
+                <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+              </div>
+              <div class="social-body">
+                <p>
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy.
+                </p>
+                <div class="btn-group">
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-thumbs-up"></i> Like this!
+                  </button>
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-comments"></i> Comment
+                  </button>
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-share"></i> Share
+                  </button>
+                </div>
+              </div>
+              <div class="social-footer">
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <a href="#">Andrew Williams</a>
+                    Internet tend to repeat predefined chunks as necessary,
+                    making this the first true generator on the Internet. It
+                    uses a dictionary of over 200 Latin words.
+                    <br />
+                    <a href="#" class="small">
+                      <i class="fa fa-thumbs-up"></i> 26 Like this!
+                    </a>{" "}
+                    -<small class="text-muted">12.06.2014</small>
+                  </div>
+                </div>
+
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <a href="#">Andrew Williams</a>
+                    Making this the first true generator on the Internet. It
+                    uses a dictionary of.
+                    <br />
+                    <a href="#" class="small">
+                      <i class="fa fa-thumbs-up"></i> 11 Like this!
+                    </a>{" "}
+                    -<small class="text-muted">10.07.2014</small>
+                  </div>
+                </div>
+
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <textarea
+                      class="form-control"
+                      placeholder="Write comment..."
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            className="bg-body shadow-sm mx-auto"
-            style={{
-              width: "80%",
-              height: "300px",
-              borderRadius: "21px 21px 0 0",
-            }}
-          ></div>
+
+          <div class="social-feed-separated">
+            <div class="social-avatar">
+              <a href="">
+                <img
+                  alt="image"
+                  src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                />
+              </a>
+            </div>
+            <div class="social-feed-box">
+              <div class="pull-right social-action dropdown">
+                <button
+                  data-toggle="dropdown"
+                  class="dropdown-toggle btn-white"
+                >
+                  <i class="fa fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu m-t-xs">
+                  <li>
+                    <a href="#">Config</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="social-avatar">
+                <a href="#">Andrew Williams</a>
+                <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+              </div>
+              <div class="social-body">
+                <p>
+                  Text, and a search for 'lorem ipsum' will uncover many web
+                  sites still in their infancy.
+                </p>
+                <div class="btn-group">
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-thumbs-up"></i> Like this!
+                  </button>
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-comments"></i> Comment
+                  </button>
+                  <button class="btn btn-white btn-xs">
+                    <i class="fa fa-share"></i> Share
+                  </button>
+                </div>
+              </div>
+              <div class="social-footer">
+                <div class="social-comment">
+                  <a href="" class="pull-left">
+                    <img
+                      alt="image"
+                      src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <textarea
+                      class="form-control"
+                      placeholder="Write comment..."
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

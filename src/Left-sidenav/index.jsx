@@ -9,7 +9,10 @@ function LeftNavBar(props) {
 
   return (
     <>
-      <nav id="sidebarMenu" className="col-md-1 col-lg-2 bg-secondary vh-100">
+      <nav
+        id="sidebarMenu"
+        className="col-md-1 col-lg-2 sticky-top bg-secondary vh-100"
+      >
         <div className="text-center my-3">
           <img
             className="profile-image border border-3 border-light"
@@ -17,35 +20,71 @@ function LeftNavBar(props) {
             alt="Profile-Pic"
           />
           <h2 className="text-light mt-2">Hi!, I'm Tomeee</h2>
-          <Link to="/Someting" className="link-light">
+          <Link
+            onClick={() => {
+              props.setCurrentLink("/Someting");
+            }}
+            to="/Someting"
+            className="link-light"
+          >
             View Profile
           </Link>
         </div>
 
         <div className=" container border-top border-bottom border-light pt-3">
-          <ul className="navbar-nav mb-5 ps-4 text-light">
+          <ul className="navbar-nav mb-5  text-light">
             <li className="nav-item active mb-3">
-              <Link to="/" className="btn btn-light w-100">
+              <Link
+                onClick={() => {
+                  props.setCurrentLink("/");
+                }}
+                to="/"
+                className="btn btn-light w-100"
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Dashboard" className="btn text-light w-100">
+              <Link
+                onClick={() => {
+                  props.setCurrentLink("/Dashboard");
+                }}
+                to="/Dashboard"
+                className="btn text-light w-100"
+              >
                 Dashboard
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Contact-us" className="btn text-light w-100">
+              <Link
+                onClick={() => {
+                  props.setCurrentLink("/Contact-us");
+                }}
+                to="/Contact-us"
+                className="btn text-light w-100"
+              >
                 Contact Us
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Support" className="btn text-light w-100">
+              <Link
+                onClick={() => {
+                  props.setCurrentLink("/Support");
+                }}
+                to="/Support"
+                className="btn text-light w-100"
+              >
                 Support
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/Someting" className="btn text-light w-100">
+              <Link
+                onClick={() => {
+                  props.setCurrentLink("/Someting");
+                }}
+                to="/Someting"
+                className="btn text-light w-100"
+              >
                 Documents
               </Link>
             </li>

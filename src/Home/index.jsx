@@ -22,21 +22,23 @@ function Home() {
 
   const renderOutlet = () => {
     if (currentLink == "/") {
-      <>
-        <HomeContent />
-      </>;
+      return (
+        <>
+          <HomeContent />
+        </>
+      );
     } else {
       return <Outlet />;
     }
   };
-
+  console.log(currentLink);
   return !!isUserLoggedIn ? (
     <>
       <div className="container-fluid">
         <div className="row">
           <LeftNavBar setCurrentLink={setCurrentLink} />
           <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom sticky-top bg-light">
               <h1 className="display-5 fw-bold">Dashboard</h1>
               <div className="btn-toolbar mb-2 mb-md-0">
                 <div className="btn-group me-2">
@@ -55,7 +57,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <Outlet />
+            {renderOutlet()}
           </main>
         </div>
       </div>
